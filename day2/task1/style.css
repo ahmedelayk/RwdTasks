@@ -1,0 +1,44 @@
+body {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+section {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: 
+  "head head head head head"
+  "nav1 main main main nav2"
+  "nav1 main main main nav2"
+  "nav1 main main main nav2"
+  "footer footer footer footer footer";
+  gap: 5px 5px;
+}
+section > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header {
+  grid-area: head;
+  background-color: #5070b5;
+  
+}
+.nav1 {
+  grid-area: nav1;
+  background-color: #b95f21;
+}
+.nav2 {
+  grid-area: nav2;
+  background-color: #b95f21;
+}
+main {
+  grid-area: main;
+  background-color: #81a43c;
+}
+footer {
+  grid-area: footer;
+  background-color: #5070b5;
+}
