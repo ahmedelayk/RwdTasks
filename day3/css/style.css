@@ -1,0 +1,43 @@
+
+@media (max-width: 767.98px) {
+  .w-image-md {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.w-image-min-max {
+  min-width: 220px;
+  max-width: 400px;
+}
+
+.hr-5 {
+  height: 5px;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+}
+
+.hr-5::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+}
+
+
+@media (min-width: 991.98px) {
+  .w-svg-lg {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .w-svg-md {
+    margin-left: 28px;
+  }
+}
+
